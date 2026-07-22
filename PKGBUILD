@@ -1,15 +1,15 @@
-pkgname="fluentui-system-icons-remapped"
+pkgname="fluentui-system-icons-svg"
 pkgver=1.1.333
 pkgrel=1
-pkgdesc="SVG files of Microsoft's FluentUI System Icon packaged in a plain layout"
+pkgdesc="SVG files of Microsoft's FluentUI System Icons packaged for Linux"
 arch=("any")
-url="https://github.com/Ynverxe/fluentui-system-icons-remapped"
+url="https://github.com/Ynverxe/fluentui-system-icons-svg"
 license=("MIT")
 source=("https://github.com/Microsoft/fluentui-system-icons/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=('b96f17d9870841f5156667492042f5793ed50121c40f1789b990373cf696767b')
 
 package() {
-  local baseDir="${pkgdir}/usr/share/fluentui-system-icons-remapped"
+  local baseDir="${pkgdir}/usr/share/fluentui-system-icons-svg"
 
   install -dm755 $baseDir
 
